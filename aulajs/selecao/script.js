@@ -8,8 +8,10 @@ const items = document.querySelectorAll("li");
 
 console.log(items);
 
-const card1 = document.querySelector(".card");
+//const card1 = document.querySelector(".card");
 
+// trabalhando com dataset
+const card1 = document.querySelector('[data-product-id="32"]');
 console.log(card1);
 
 const paragrafo = document.createElement("p");
@@ -26,4 +28,3 @@ console.log(cards);
 Array.from(cards).map(item => {
     console.log(item.innerHTML);
 });
-
