@@ -1,14 +1,18 @@
+import Address from '../models/address.js';
 
 function State(){
-    this.btnSave = null;
-    this.btnClear = null;
 
-    this.inputCep = null;
+    this.address     = new Address();
+
+    this.btnSave     = null;
+    this.btnClear    = null;
+
+    this.inputCep    = null;
     this.inputStreet = null;
     this.inputNumber = null;
-    this.inputCity = null;
+    this.inputCity   = null;
     
-    this.errorCep = null;
+    this.errorCep    = null;
     this.errorNumber = null;
 }
 
